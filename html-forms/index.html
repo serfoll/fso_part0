@@ -1,0 +1,88 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Abrahyve - Contact</title>
+  </head>
+  <body>
+    <main>
+      <section class="contact-card">
+        <!-- Image at the top -->
+        <div class="contact-card__image"></div>
+
+        <!-- Heading -->
+        <div class="heading">
+          <h1 class="heading__title">What can we help you with?</h1>
+          <h2 class="heading__subtitle">We are here to help</h2>
+        </div>
+
+        <!-- Contact form -->
+        <form method="post" action="" class="form">
+          <div class="form__item">
+            <label for="name">Name <span class="required">*</span></label>
+            <input
+              class="form__input-field"
+              type="text"
+              id="name"
+              name="user_name"
+              required
+              placeholder="John Doe"
+            />
+          </div>
+
+          <div class="form__item">
+            <label for="mail">Email <span class="required">*</span></label>
+            <input
+              class="form__input-field"
+              type="email"
+              id="mail"
+              name="user_email"
+              placeholder="johndoe@example.com"
+              required
+            />
+          </div>
+
+          <div class="form__item">
+            <label for="subject">Subject</label>
+            <select
+              class="form__input-field"
+              title="subject"
+              id="subject"
+              name="subject"
+            >
+              <option selected>Order information</option>
+              <option>Support</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form__item">
+            <label for="msg">Message <span class="required">*</span></label>
+            <textarea
+              class="form__input-field form__message"
+              id="msg"
+              name="user_message"
+              required
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+
+          <div class="form__item">
+            <button class="form__submit-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">
+        All fields marked with <span class="required">*</span> are required!
+      </p>
+    </footer>
+  </body>
+</html>
