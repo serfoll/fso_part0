@@ -6,7 +6,7 @@
 /* RESET */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 *,
@@ -141,7 +141,9 @@ body {
 }
 
 .footer__text {
-  color: white;
+  color: antiquewhite;
+  font-style: italic;
+  font-weight: 100;
   max-width: 600px;
   margin: 3rem auto;
   padding: 0 1.5rem;
