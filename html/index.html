@@ -9,23 +9,22 @@
     <title>Édith Piaf - The Little Sparrow</title>
   </head>
   <body>
-    <!-- Biography Section -->
-    <header>
-      <h1>Édith Piaf</h1>
-      <h2>The Little Sparrow</h2>
-      <img alt="Édith Piaf" src="./images/edith-piaf.jpg" />
+    <!-- Header Section -->
+    <header class="header" id="header">
+      <h1 class="header__title">Édith Piaf</h1>
+      <h2 class="header__subtitle">The Little Sparrow</h2>
     </header>
     <main>
-      <section>
-        <h3>About Édith Piaf</h3>
-        <p>
+      <article class="bio">
+        <h3 class="bio__title">About Édith Piaf</h3>
+        <p class="bio__text">
           Édith Piaf (19 December 1915 – 10 October 1963) was a French singer,
           songwriter, and actress, renowned for her powerful voice and emotional
           performances. Nicknamed "The Little Sparrow" due to her small stature
           and expressive singing, she became one of France's most beloved
           cultural icons.
-          <br />
-          <br />
+        </p>
+        <p class="bio__text">
           Born in Paris, Piaf's early life was marked by hardship, including
           poverty and illness. Discovered singing on the streets, she rose to
           fame in the 1930s and 1940s, captivating audiences with songs like "La
@@ -33,46 +32,51 @@
           reflecting themes of love, loss, and resilience, continues to inspire
           generations.
         </p>
-      </section>
+      </article>
 
       <!-- Notable Songs Section -->
-      <section>
-        <h3>Some of Édith Piaf's best songs</h3>
-        <ul>
-          <li>
+      <section class="songs">
+        <h3 class="songs__title">Notable songs</h3>
+        <ul class="songs__list">
+          <li class="songs__list-item">
             <a
+              class="songs__list-item-link"
               href="https://www.youtube.com/watch?v=rzeLynj1GYM"
               rel="noopener"
               target="_blank"
               >La Vie en Rose (1946)</a
             >
           </li>
-          <li>
+          <li class="songs__list-item">
             <a
+              class="songs__list-item-link"
               href="https://www.youtube.com/watch?v=sgBldNsK-xw"
               rel="noopener"
               target="_blank"
               >Hymne à l'Amour (1949)</a
             >
           </li>
-          <li>
+          <li class="songs__list-item">
             <a
+              class="songs__list-item-link"
               href="https://www.youtube.com/watch?v=xXqLj7X1WDU"
               rel="noopener"
               target="_blank"
               >Padam Padam (1951)</a
             >
           </li>
-          <li>
+          <li class="songs__list-item">
             <a
+              class="songs__list-item-link"
               href="https://www.youtube.com/watch?v=nZcdI1u_9o8"
               rel="noopener"
               target="_blank"
               >Milord (1959)</a
             >
           </li>
-          <li>
+          <li class="songs__list-item">
             <a
+              class="songs__list-item-link"
               href="https://www.youtube.com/watch?v=Q3Kvu6Kgp88"
               rel="noopener"
               target="_blank"
@@ -84,9 +88,9 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-      <p>
-        <i>Celebrating the legacy of Édith Piaf, France's timeless voice.</i>
+    <footer class="footer" id="footer">
+      <p class="footer__text">
+        Celebrating the legacy of Édith Piaf, France's timeless voice.
       </p>
     </footer>
   </body>
