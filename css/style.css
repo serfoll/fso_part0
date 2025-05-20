@@ -1,0 +1,148 @@
+/** @format */
+
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ancizar Serif", serif;
+  font-style: normal;
+  color: antiquewhite;
+}
+
+body {
+  background-color: #121212;
+}
+
+.header {
+  background-image: url("../html/images/edith-piaf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.header__title {
+  font-size: 3.8rem;
+  color: crimson;
+  position: relative;
+  z-index: 2;
+}
+
+.header__subtitle {
+  font-size: 2rem;
+  color: #d4af37;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 400px;
+    background-position: center 30%;
+  }
+}
+
+.bio,
+.songs {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 2rem 1.5rem;
+}
+
+.bio__title,
+.songs__title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio__text {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.songs__list-item {
+  margin-bottom: 0.2em;
+}
+
+.songs__list-item-link,
+.songs__list-item:visited {
+  color: crimson;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.songs__list-item-link:hover {
+  color: antiquewhite;
+  text-decoration: underline;
+}
+
+.footer__text {
+  color: white;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
