@@ -26,8 +26,8 @@ participant server
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 
     activate server
-    server-->>browser: Serves JSON document
+    server-->>browser: Serves JSON data file
     deactivate server
 
-    Note right of browser: The browser executes the callback function that renders the notes on the page
+    Note right of browser: The browser executes the callback function and renders the notes on the page
 ```
