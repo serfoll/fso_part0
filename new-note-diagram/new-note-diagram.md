@@ -43,10 +43,10 @@ participant server
   browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 
   activate server
-  server-->>browser: Serves JSON document
+  server-->>browser: Serves JSON data file
   deactivate server
 
-  Note over browser: The browser executes a callback function with fetched JSON and renders the updated list of notes
+  Note over browser: The browser executes a callback function with the fetched JSON data and renders the updated list of notes
 
   browser-->>user: The browser presents the updated page to the user
 ```
