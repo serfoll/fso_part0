@@ -1,3 +1,5 @@
+# Single Page Application Diagram
+
 ```mermaid
 sequenceDiagram
 participant browser
