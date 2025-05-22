@@ -13,10 +13,10 @@ participant server
   Note left of server: Server receives note content via HTTP POST from the browser
 
   activate server
-  server-->>browser: HTML document (Status code 302)
+  server-->>browser: Returns HTML response (Status code 302)
   deactivate server
 
-  Note right of browser: The server responds with status code 302
+  Note right of browser: The server saves note responds and notifes the browser (status codde 302)
 
   browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 
